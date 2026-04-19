@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI Historic", sans-serif;
-  background-color: #f0f2f5;
+  background-color: #ffffff;
 }
 .login-page {
   /* max-width: 1200px; */
@@ -12,22 +12,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid #dfe2e5;
 }
 .login-page > .left-sec {
   width: 50%;
   border-right: 3px solid #dfe2e5;
   margin: 0px 22px;
-  flex: 1;
 }
 .left-sec > img {
-  width: 550px;
-  height: 600px;
+  width: 600px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 120px;
 }
 .left-sec > p {
   margin-top: 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: -250px;
+  margin-left: 18px;
 }
 .left-sec > p > span {
   color: #1877f2;
@@ -52,6 +55,7 @@
   border: 0.2px solid #666a72;
   padding: 8px 15px;
   transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
 }
 .right-sec > input:focus {
   outline: none;
@@ -103,11 +107,20 @@
   height: 50px;
   border-radius: 25px;
   border: 1px solid #005fd5;
-  color: #005fd5;
   font-size: 18px;
+}
+.create-btn > a {
+  text-decoration: none;
+  color: #005fd5;
 }
 .create-btn:hover {
   cursor: pointer;
   background-color: #f2f2f2;
   transition: 0.3s ease;
+}
+.right-sec > .logo {
+  margin-top: 25px;
+  margin-left: 260px;
+  width: 70px;
+  height: auto;
 }
