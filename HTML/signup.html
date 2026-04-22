@@ -4,6 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp</title>
+    <link rel="stylesheet" href="/CSS/signup.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <img
+        src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4hZ1LkFP2sW.webp"
+        alt=""
+      />
+      <h2>Get started on Facebook</h2>
+      <p class="fp">
+        Create an account to connect with friends, family and communities of
+        people who share your interests.
+      </p>
+      <form class="signup-form">
+        <div id="name">
+          <label for="name">Name</label>
+          <input type="text" name="first" id="first" placeholder="First name" />
+          <input
+            type="text"
+            name="surename"
+            id="surename"
+            placeholder="Surename"
+          />
+        </div>
+        <div id="dob">
+          <label for="">Date of birth</label>
+          <select name="day" id="day">
+            <option value="day" class="day">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <select name="month" id="month">
+            <option value="month">Month</option>
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+          </select>
+          <select name="year" id="year">
+            <option value="year">Year</option>
+            <option value="2005">2026</option>
+            <option value="2008">2025</option>
+            <option value="2004">2024</option>
+            <option value="2015">2023</option>
+          </select>
+        </div>
+        <div id="gender">
+          <label for="gender">Gender</label>
+          <select id="">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Mobile number or email address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Mobile number or email address"
+          />
+          <p>
+            You may receive notifications from us.
+            <a href="">Learn why we ask for your contact information</a>
+          </p>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <p class="sp">
+          People who use our service may have uploaded your contact information
+          to Facebook. <a href="#">Learn more</a>
+        </p>
+        <p class="tp">
+          By tapping Submit, you agree to create an account and to Facebook's
+          <a href="#">Terms, Privacy Policy</a> and
+          <a href="#">Cookies Policy</a>
+        </p>
+        <p class="fp">
+          The <a href="#">Privacy Policy</a> describes the ways we can use the
+          information we collect when you create an account. For example, we use
+          this information to provide, personalise and improve our products,
+          including ads.
+        </p>
+        <button type="submit">Submit</button> <br />
+        <button>
+          <a href="/HTML/login.html">I already hane an account</a>
+        </button>
+      </form>
+    </div>
+  </body>
 </html>

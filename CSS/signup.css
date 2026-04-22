@@ -3,4 +3,108 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #ffffff;
+  font-family: "Optimistic", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  margin-left: 420px;
+  padding: 10px 15px;
+}
+.container > h2 {
+  /* font-family: "Optimistic", sans-serif; */
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #111112;
+}
+.container > .fp {
+  width: 550px;
+  /* font-family: "Segoe UI", sans-serif; */
+  margin-bottom: 12px;
+}
+.container > img {
+  width: 70px;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.signup-form > #name > label {
+  display: block;
+  margin: 6px -5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#name {
+  margin-bottom: 18px;
+}
+#name > #first {
+  width: 280px;
+  height: 55px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+#name > #first:focus {
+  border: 1px solid #666a72;
+}
+#name > #first:hover {
+  color: #666a72;
+  cursor: pointer;
+  border: 1px solid #666a72;
+}
+#first::placeholder {
+  padding: 5px 8px;
+  font-size: 15px;
+  color: #666a72;
+}
+#name > #surename {
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+}
+#name > #surename:focus {
+  border: 1px solid #666a72;
+}
+#name > #surename:hover {
+  color: #666a72;
+  cursor: pointer;
+  border: 1px solid #666a72;
+}
+#surename::placeholder {
+  padding: 5px 8px;
+  font-size: 15px;
+}
+#dob > label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin: 10px -5px;
+}
+#dob > select {
+  width: 178px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+  color: #666a72;
+}
+#dob > select > option {
+  padding-right: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+#dob > select:hover {
+  border: 1px solid #666a72;
+  cursor: pointer;
+}
+#dob > #select:focus {
+  border: 2px solid #666a72;
+}
+#gender {
 }
