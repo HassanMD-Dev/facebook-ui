@@ -31,21 +31,21 @@
         <div id="dob">
           <label for="">Date of birth</label>
           <select name="day" id="day">
-            <option value="day" class="day">Day</option>
+            <option value="day" class="db">Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
           <select name="month" id="month">
-            <option value="month">Month</option>
+            <option value="month" class="db">Month</option>
             <option value="jan">Jan</option>
             <option value="feb">Feb</option>
             <option value="march">March</option>
             <option value="april">April</option>
           </select>
           <select name="year" id="year">
-            <option value="year">Year</option>
+            <option value="year" class="db">Year</option>
             <option value="2005">2026</option>
             <option value="2008">2025</option>
             <option value="2004">2024</option>
@@ -54,13 +54,13 @@
         </div>
         <div id="gender">
           <label for="gender">Gender</label>
-          <select id="">
+          <select id="gend">
             <option value="female">Female</option>
             <option value="male">Male</option>
             <option value="other">Other</option>
           </select>
         </div>
-        <div>
+        <div id="mob-email">
           <label for="email">Mobile number or email address </label>
           <input
             type="email"
@@ -70,10 +70,10 @@
           />
           <p>
             You may receive notifications from us.
-            <a href="">Learn why we ask for your contact information</a>
+            <a href="#">Learn why we ask for your contact information</a>
           </p>
         </div>
-        <div>
+        <div id="passwd">
           <label for="password">Password</label>
           <input
             type="password"
@@ -97,8 +97,8 @@
           this information to provide, personalise and improve our products,
           including ads.
         </p>
-        <button type="submit">Submit</button> <br />
-        <button>
+        <button type="submit" class="sub">Submit</button> <br />
+        <button class="already">
           <a href="/HTML/login.html">I already hane an account</a>
         </button>
       </form>
