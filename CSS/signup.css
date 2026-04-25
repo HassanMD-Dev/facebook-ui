@@ -52,7 +52,12 @@ body {
 }
 input:focus,
 select:focus {
-  border-color: #1877f2; /* Facebook blue border on focus */
+  border-color: #1877f2;
+}
+#name > #first:hover {
+  color: #666a72;
+  cursor: pointer;
+  border: 1px solid #666a72;
 }
 #first::placeholder {
   padding: 5px 8px;
@@ -61,7 +66,7 @@ select:focus {
 }
 #name > #surename {
   width: 280px;
-  height: 50px;
+  height: 55px;
   border-radius: 10px;
 }
 #name > #surename:focus {
@@ -236,8 +241,11 @@ select:focus {
   border-radius: 25px;
   background-color: #0064e0;
   border: none;
+}
+.sub > a {
   color: #fff;
   font-size: 18px;
+  text-decoration: none;
 }
 .signup-form > .sub:hover {
   background-color: #005fd5;

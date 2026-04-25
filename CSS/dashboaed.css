@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #f2f4f7;
+}
+.facebook-dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 360px 1fr 360px;
+  gap: 20px;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / span 3;
+}
+nav > .nav-left-sec > .fi {
+  font-size: 38px;
+  margin-left: 8px;
+  margin-top: 8px;
+  color: #0866ff;
+}
+.nav-left-sec > #search {
+  width: 220px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f0f2f5;
+}
+.nav-left-sec {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.nav-left-sec > .si {
+  position: absolute;
+  top: 15px;
+  left: 58px;
+  padding-left: 10px;
+}
+.nav-left-sec > #search::placeholder {
+  padding-left: 32px;
+}
+nav > .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links > a {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  text-decoration: none;
+  color: #606366;
+}
+.nav-links > a:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+.nav-links > a > i {
+  font-size: 28px;
+}
+.nav-links > a:active {
+  color: #0866fe;
+  border-bottom: 4px solid #0866fe;
+}
+nav > .nav-right-sec {
+  margin-right: 22px;
+  display: flex;
+  gap: 8px;
+}
+.nav-right-sec > a {
+  color: #080809;
+  text-decoration: none;
+}
+.nav-right-sec > a > i {
+  width: 45px;
+  height: 45px;
+  background-color: #d6d9dd;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.nav-right-sec > a > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.left-sidebar {
+  margin-top: 0;
+  padding: 15px 8px;
+  height: calc(100vh - 56px);
+  background-color: #f2f4f7;
+  position: sticky;
+  top: 56px;
+  overflow-y: auto;
+}
+.sidebar-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.sidebar-row:hover {
+  background-color: #e4e6eb;
+}
+.sidebar-row > span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #050505;
+}
+.sidebar-row > i {
+  font-size: 24px;
+  width: 36px;
+  text-align: center;
+}
+.blue {
+  color: #1877f2;
+}
+.red {
+  color: #f02849;
+}
+.purple {
+  color: #b049bc;
+}
+.circle {
+  background: #e4e6eb;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px !important;
+}
+.user-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.divider {
+  margin: 15px 10px;
+  border: none;
+  border: 1px solid #ced0d4;
+}
+.shortcut-title {
+  padding: 0px 10px;
+  color: #65676b;
+  font-size: 17px;
+}
+.feed-area {
+  padding: 20px 8%;
+  overflow-y: auto;
+}
+.stories-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  height: 200px;
+  overflow-x: auto;
+}
+.story-card {
+  width: 112px;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.story-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.story-card:hover .story-bg {
+  transform: scale(1.05);
+}
+.story-profile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: 3px solid #1877f2;
+}
+.story-card > p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+.create-story > img {
+  height: 80%;
+}
+.create-story > p {
+  position: absolute;
+  bottom: 8px;
+  left: 25px;
+  color: #070708;
+  font-size: 14px;
+  font-weight: 500;
+}
+.plus-icon {
+  position: absolute;
+  bottom: 25px;
+  left: 42px;
+  width: 30px;
+  height: 30px;
+  background-color: #075ce5;
+  border-radius: 50%;
+}
+.plus-icon > i {
+  color: #ffffff;
+  padding: 8px 8px;
+}
+.post-container {
+  max-width: 680px;
+  min-height: 580px;
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 420px;
+  /* margin: 20px auto; */
+  background-color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-info {
+  display: flex;
+}
+.post-info > img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.name-time {
+  padding: 2px 5px;
+  margin-bottom: 15px;
+}
+.name-time > h5 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.name-time > h5 > a {
+  text-decoration: none;
+  color: #080809;
+}
+.name-time > h5 > a:hover {
+  text-decoration: underline;
+}
+.name-time > p {
+  font-size: 12px;
+  color: #65686c;
+  cursor: pointer;
+}
+.post-options {
+  display: flex;
+}
+.post-body > p {
+  margin-bottom: 10px;
+  color: #080809;
+}
+.post-body img {
+  width: 100%;
+  height: auto;
+}
+.post-stats {
+  padding: 8px;
+  color: #65676b;
+}
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ced0d4;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.action-btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: #65676b;
+}
+.action-btn:hover {
+  background-color: #f2f2f2;
+}
+.action-btn i {
+  font-size: 20px;
+}
+.sidebar-title > h4 {
+  color: #65686c;
+  margin: 15px 18px;
+  font-size: 18px;
+}
+.ads-box > .ad-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 8px;
+  transition: all 0.3s ease;
+}
+.ad-item:hover {
+  background-color: #dadcdf;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ad-item > img {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.ad-details > p {
+  color: #080809;
+}
